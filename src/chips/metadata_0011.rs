@@ -2288,6 +2288,10 @@ pub(crate) static INTERRUPTS: &[Interrupt] = &[
         name: "OSC_WKUP",
         number: 69,
     },
+    Interrupt {
+        name: "OTG_FS",
+        number: 83,
+    },
 ];
 pub(crate) static DMA_CHANNELS: &[DmaChannel] = &[
     DmaChannel {
