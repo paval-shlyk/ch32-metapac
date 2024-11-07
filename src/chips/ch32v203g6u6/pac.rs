@@ -286,7 +286,7 @@ pub const FLASH: flash::Flash = unsafe { flash::Flash::from_ptr(0x4002_2000usize
 pub const EXTEND: extend::Extend = unsafe { extend::Extend::from_ptr(0x4002_3800usize as _) };
 pub const PFIC: pfic::Pfic = unsafe { pfic::Pfic::from_ptr(0xe000_e000usize as _) };
 pub const SYSTICK: systick::Systick = unsafe { systick::Systick::from_ptr(0xe000_f000usize as _) };
-#[cfg(feature = "rt")]
+pub const USART4: usart::Usart = unsafe { usart::Usart::from_ptr(0x4000_4C00usize as _) };
 #[cfg(feature = "rt")]
 pub use Interrupt as interrupt;
 pub fn GPIO(n: usize) -> gpio::Gpio {
